@@ -1,0 +1,378 @@
+@media screen and (max-width: 1000px) {
+/*     div.top ul li a {
+        font-size: 50px;
+    }
+    div.section-1 h1 {
+        font-size: 100px;
+        padding-top: 20%;
+    }
+    div.dynamic h1 {
+        font-size: 95px;
+    }
+    div.section-1 {
+        height: 55vh;
+    }
+    
+    h1.mE, h1.sec2header {
+        font-size: 120px;
+    }
+    div.skillBox h1, div.skillBoxNew1 h1, div.skillBoxNew2 h1 {
+        font-size: 48px;
+    }
+    div.col-7-new h1.mE1, div.col-7-new1 h1.cC1 {
+        font-size: 75px;
+    }
+    div.col-7-new1 p.cC2, div.col-7-new p.mE2 {
+        font-size:  27px;
+    }
+    div.col-7 p {
+        font-size: 27px;
+    } */
+    div.col-7, div.col-5, div.col-6-right, div.col-6-left, div.col-4-middle, div.col-4-right, div.col-4-left, div.col-5-new, div.col-7-new, div.col-5-new1, div.col-7-new1 {
+        width: 100%;
+        margin: 0;
+    }
+    div.top {
+        text-align: center;
+    }
+    div.socialMedia {
+        padding-top: 0;
+    }
+    div.subCol-7 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    h1.mE1, h1.cC1{
+        text-align: center;
+    }
+    p.mE2, p.cC2 {
+        text-align: start;
+    } 
+    div.col-6-right, div.col-6-left, div.col-4, div.col-4-right, div.col-4-left, div.col-4-middle, div.col-5-new, div.col-5-new1, div.col-7-new, div.col-7-new1, div.col-5{
+        padding: 0;
+        margin: 0;
+        margin-top: 5%;
+    }
+    div.col-5-new, div.col-7-new, div.col-5-new1, div.col-7-new1 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.col-6-right, div.col-6-left, div.col-4, div.col-4-right, div.col-4-left, div.col-4-middle{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.col-7 h1 {
+        margin: 0;
+    }
+    div.about-me {
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+    }
+    div.col-7 p {
+        text-align: start;
+    }
+    div.col-5 img {
+        height: 500px;
+        width: auto;
+    }
+}
+html {
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#section-1 {
+    background-color: white;
+}
+
+.top-bg {
+    background-color: cadetblue;}
+.section-1 {
+    background-repeat: no-repeat;
+    background-size: cover;   
+    height: 85vh;
+}
+
+.section-1 h1 {
+    text-align: center;
+    font-family: "Source Code Pro";
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    padding-top: 12%;
+}
+
+.dynamic h1 {
+    text-align: center;
+    font-family: "Source Code Pro";
+    font-size: 75px;
+    color: white;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+span {
+    color: aquamarine;
+}
+
+.row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /*will shift the content downwards when flexing*/
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-4-right {width: 33.33%;}
+.col-4-left {width:  33.33%;}
+.col-4-middle {width:33.33%}
+.col-6-right {width:50%;}
+.col-6-left {width:  50%;}
+.col-7-new {width:58.33%;}
+.col-5-new {width:41.66%;}
+.col-5-new1 {width:41.66%;}
+.col-7-new1 {width:  58.33%;}
+.col-7 h1 {
+    font-family: "Oswald";
+    font-size: 80px;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.col-7 p {
+    font-family:  "Oswald";
+    font-weight: 350;
+    font-size: 18px;
+    padding: 10%;
+    padding-top: 5%;
+}
+
+.col-5 img {
+    height: 400px;
+    width: auto;
+    scale: .8; 
+    opacity: 0;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 200px 500px;
+}
+
+@keyframes fade-in {
+    to {scale: 1; opacity: 1;}
+}
+
+
+header h1 {
+    font-family: "Oswald";
+    font-size: 80px;
+    color: cadetblue;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+
+.col-4, .col-4-right, .col-4-left, .col-6-right, .col-6-left, .col-4-middle {
+    text-align: center;
+}
+.col-4-left {
+    padding-left: 10%;
+}
+.col-4-right {
+    padding-right: 10%;
+}
+.col-4-middle {
+    padding-left:5%;
+    padding-right:5%;
+}
+.col-6-left {
+    padding-left: 23%;
+    padding-right: 3%;
+}
+.col-6-right {
+    padding-right: 23%;
+    padding-left: 3%;
+}
+.skillImg {
+    height: 250px;
+    justify-content: center;
+    align-content: center;
+    
+}
+.skillBox h1 {
+    font-family: "Oswald";
+    font-weight: 400;
+    color: cadetblue;
+}
+.skillImgNew1 {
+    height:  250px;
+    padding-top: 15%;
+    align-content: center;
+}
+
+.skillBoxNew1 h1, .skillBoxNew2 h1 {
+    font-family: "Oswald";
+    font-weight: 400;
+    color: cadetblue;
+}
+
+.skillImgNew2 {
+    height: 250px;
+    padding-top: 2%;
+    color:  
+}
+.skillBox, .skillBoxNew1, .skillBoxNew2 {
+    
+    border-bottom: 6px solid white;
+    border-right: 0.5px solid white;
+    border-left: 0.5px solid white;
+    border-radius: 20px;
+    transition: 0.4s;
+} 
+
+.skillBox:hover, .skillBoxNew1:hover, .skillBoxNew2:hover {
+    background-color: azure;
+    border-bottom: 6px solid cadetblue;
+    border-right: 0.5px solid white;
+    border-left: 0.5px solid white;
+    border-radius: 20px;
+    
+}
+
+.about-me {
+    margin-top: 5%;
+    background-color: azure;
+    color: cadetblue;
+}
+
+.col-5-new, .col-5-new1 {
+    padding: 2%;
+}
+.col-7-new1, .col-7-new {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+header h1.mE {
+    margin-bottom: 2%;
+}
+
+h1.mE1, h1.cC1 {
+    font-family: "Oswald";
+    color: cadetblue;
+    font-size: 50px;
+    margin-bottom: 2%;
+}
+
+p.mE2, p.cC2 {
+    font-family: "Oswald";
+    color: cadetblue;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.aashaEd {
+    margin-bottom: 3%;
+}
+
+.myExperiences {
+    margin-top: 2.5%;
+}
+
+.mySkills {
+    margin-bottom: 2.5%;
+}
+
+hr {
+    border-top: 10px dashed cadetblue;
+}
+
+.footer {
+    margin-top: 5%;
+    background-color: cadetblue;
+}
+
+.subCol-7 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 15%;
+    text-align: center;
+    justify-content: center;
+}
+
+.subCol-7 h1.contact {
+    font-family: "Oswald";
+    font-size: 70px;
+    color: white;
+}
+.socialMedia {
+    padding-top: 10%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+ul {
+    padding-left: 0;
+}
+nav ul {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    vertical-align:middle;
+
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    
+}
+ul li a {
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+.contact h1 {
+    line-height: 1.5;
+    color: white;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: 20px;
+}
+.top ul li a:hover{
+    color: aquamarine;
+}
+.top ul li a {
+    text-decoration: none;
+    font-family: "Oswald";
+    font-size: 25px;
+    color: white;
+}
+.top ul {
+    padding-top: 1%;
+}
